@@ -1,0 +1,90 @@
+@import "../variable";
+
+.join-wrap {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo {
+    width: 120px;
+    margin: 0 auto;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.join-form {
+    margin-bottom: 120px;
+}
+
+.join-title {
+    @include font-concept-headline1;
+    color: $color-primary;
+    text-align: center;
+    margin: 40px 0 50px 0;
+}
+
+.input-box {
+    width: 580px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrap {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-disable;
+}
+
+.input-title {
+    @include font-caption1-b;
+    color: $color-disable;
+    width: 120px;
+}
+
+.input-text {
+    @include font-caption1-rg;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.confirm-button {
+    @include font-caption1-rg;
+    color: $color-primary;
+    width: 152px;
+    padding: 9px 0;
+    margin-left: 8px;
+    text-align: center;
+    border: 2px solid $color-primary;
+    background-color: $color-secondary;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+}
+
+.submit {
+    @include font-body-b;
+    color: $color-secondary;
+    width: 440px;
+    margin: 60px auto;
+    padding: 12px;
+    text-align: center;
+    background-color: $color-primary;
+    cursor: pointer;
+}

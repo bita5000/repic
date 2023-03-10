@@ -1,0 +1,78 @@
+@import "../variable";
+
+.header {
+    background-color: $color-primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header-wrap {
+    width: $desktop-grid;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    div img {
+        cursor: pointer;
+    }
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.gnb ul li {
+    @include font-eng-headline1-b;
+    margin-left: 60px;
+    color: $color-secondary;
+}
+
+.drawing-button {
+    @include font-eng-headline2-rg;
+    border: 2px solid $color-secondary;
+    padding: 4px 12px;
+    color: $color-secondary;
+    transition: 0.2s;
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}
+
+.join {
+    @include font-caption2-rg;
+    margin-left: 26px;
+    color: $color-secondary;
+    padding: 0 16px;
+    border: 2px solid $color-secondary;
+    border-radius: 10px;
+    transition: 0.2s;
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}
+
+.login {
+    @include font-caption2-rg;
+    color: $color-secondary;
+}
+
+.header-margin {
+    margin-top: 80px;
+}

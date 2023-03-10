@@ -16,7 +16,9 @@ module.exports = {
     },
     // 파일 변경이 감지되었을 때 페이지를 다시 로드하고 새로고침
     devServer: {
-        liveReload: true
+        liveReload: true,
+        historyApiFallback: true,
+        port: 3000
     },
     module: {
         rules: [

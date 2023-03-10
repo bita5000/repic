@@ -1,0 +1,207 @@
+// color
+
+$color-primary: #000;
+$color-secondary: #fff;
+$color-lower-text: #868686;
+$color-disable: #a3a3a3;
+$color-background-light: #f8f8f8;
+$color-background-dark: #161616;
+$color-state-success: #2f80ed;
+$color-state-error: #ed3a3a;
+$color-gradients: linear-gradient(
+    90deg,
+    #8d8d8d -4.31%,
+    rgba(103, 103, 103, 0) 104%
+);
+
+// grid
+$desktop-grid: 80%;
+
+//font
+
+@mixin font-display {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-headline-b {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-headline-rg {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-subtitle-b {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-subtitle-rg {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-body-b {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-body-rg {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: -0.04em;
+}
+
+@mixin font-caption1-b {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+}
+
+@mixin font-caption1-rg {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+}
+
+@mixin font-caption2-b {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+}
+
+@mixin font-caption2-rg {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+}
+
+@mixin font-caption3-rg {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+}
+
+@mixin font-eng-headline1-b {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+@mixin font-eng-headline2-rg {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+@mixin font-eng-headline3-b {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+@mixin font-eng-headline4-rg {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin font-eng-headline4-li {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin font-concept-headline1 {
+    font-family: "Silkscreen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 200%;
+    letter-spacing: -0.1em;
+}
+
+@mixin font-concept-headline2 {
+    font-family: "Silkscreen";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 200%;
+    letter-spacing: -0.1em;
+}
+
+@mixin font-concept-headline3 {
+    font-family: "Silkscreen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -0.1em;
+}
+
+@mixin font-concept-headline4 {
+    font-family: "Silkscreen";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -0.1em;
+}

@@ -1,0 +1,44 @@
+@import "../variable";
+
+.footer-wrap {
+    background-color: $color-primary;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-image {
+    margin: 90px 0 30px 0;
+}
+
+.footer-info {
+    color: $color-secondary;
+}
+
+.info-title {
+    @include font-eng-headline3-b;
+    margin-top: 20px;
+    margin-right: 16px;
+}
+
+.participants {
+    @include font-eng-headline4-li;
+    margin-top: 20px;
+}
+
+.front-end,
+.back-end {
+    display: flex;
+}
+
+.designer {
+    margin-top: 50px;
+}
+
+.copyright {
+    @include font-eng-headline2-rg;
+    color: $color-disable;
+    padding: 60px 0 90px 0;
+}

@@ -1,0 +1,103 @@
+@import "../variable";
+
+.main-banner-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    margin-top: -80px;
+}
+
+.main-banner-text {
+    padding-top: 22vh;
+    //font
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-background-light;
+}
+
+.main-banner-text-top {
+    margin-left: -380px;
+}
+
+.main-banner-article {
+    width: 350px;
+    position: absolute;
+    margin-left: 30px;
+    animation: slidein 0.9s ease infinite alternate;
+}
+
+@keyframes slidein {
+    0% {
+        top: 24%;
+    }
+    100% {
+        top: 22%;
+    }
+}
+
+.next-container {
+    @include font-concept-headline2;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -70px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.howTo-container {
+    background-color: $color-background-dark;
+}
+
+.howTo-title-text {
+    text-align: center;
+    padding-top: 120px;
+    color: $color-secondary;
+}
+
+.howTo-article {
+    @include font-concept-headline2;
+    margin-bottom: 0px;
+}
+
+.howTo-title {
+    @include font-headline-b;
+}
+
+.step-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    color: $color-secondary;
+}
+
+.step-text-container {
+    width: 420px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.step-image {
+    width: 500px;
+}
+
+.step-text-number {
+    @include font-concept-headline2;
+    margin-bottom: 32px;
+    margin-top: 120px;
+}
+
+.step-text-title {
+    @include font-subtitle-b;
+    margin-bottom: 16px;
+}
+
+.step-text-explanation {
+    @include font-caption1-rg;
+}
