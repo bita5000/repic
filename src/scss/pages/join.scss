@@ -26,14 +26,15 @@
 
 .input-box {
     width: 580px;
-    margin: 20px auto;
+    padding-top: 4px;
+    margin: 8px auto;
     display: flex;
     align-items: center;
 }
 
 .input-wrap {
     width: 100%;
-    padding: 10px 0;
+    padding: 4px 0;
     display: flex;
     align-items: center;
     border-bottom: 1px solid $color-disable;
@@ -65,13 +66,14 @@ input[type="number"]::-webkit-inner-spin-button {
     @include font-caption1-rg;
     color: $color-primary;
     width: 152px;
-    padding: 9px 0;
+    padding: 3px 0;
     margin-left: 8px;
     text-align: center;
     border: 2px solid $color-primary;
+    border-radius: 3px;
     background-color: $color-secondary;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.1s;
     &:hover {
         background-color: $color-primary;
         color: $color-secondary;
@@ -87,4 +89,13 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
     background-color: $color-primary;
     cursor: pointer;
+}
+
+.validation-warning {
+    @include font-caption2-rg;
+    width: 580px;
+    padding-left: 120px;
+    margin: 0 auto;
+    color: $color-state-error;
+    visibility: hidden;
 }

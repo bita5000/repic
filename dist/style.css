@@ -180,14 +180,15 @@
 
 .input-box {
   width: 580px;
-  margin: 20px auto;
+  padding-top: 4px;
+  margin: 8px auto;
   display: flex;
   align-items: center;
 }
 
 .input-wrap {
   width: 100%;
-  padding: 10px 0;
+  padding: 4px 0;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #a3a3a3;
@@ -234,13 +235,14 @@ input[type=number]::-webkit-inner-spin-button {
   letter-spacing: -0.02em;
   color: #000;
   width: 152px;
-  padding: 9px 0;
+  padding: 3px 0;
   margin-left: 8px;
   text-align: center;
   border: 2px solid #000;
+  border-radius: 3px;
   background-color: #fff;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .confirm-button:hover {
   background-color: #000;
@@ -261,6 +263,20 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: center;
   background-color: #000;
   cursor: pointer;
+}
+
+.validation-warning {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: -0.02em;
+  width: 580px;
+  padding-left: 120px;
+  margin: 0 auto;
+  color: #ed3a3a;
+  visibility: hidden;
 }
 /*!**************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/components/header.scss ***!

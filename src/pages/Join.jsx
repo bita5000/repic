@@ -10,14 +10,7 @@ import logo from "../images/logo.svg";
 
 const Join = () => {
     const navigate = useNavigate();
-    // const baseURL = process.env.REACT_APP_API_KEY;
-    // console.log(process.env.REACT_APP_API_KEY);
-    axios({
-        method: "GET",
-        url: "https://picboy.net/post/random-topic"
-    }).then(function (res) {
-        console.log(res);
-    });
+
     return (
         <>
             <div
@@ -40,10 +33,12 @@ const Join = () => {
                             <input
                                 type="text"
                                 className="input-text"
-                                placeholder="아이디를 입력하세요"
+                                placeholder="아이디를 입력해 주세요"
                             />
                         </div>
-                        <div className="confirm-button">중복확인</div>
+                    </div>
+                    <div className="validation-warning">
+                        이미 사용중인 아이디입니다.
                     </div>
                     <div className="input-box">
                         <div className="input-wrap">
@@ -51,9 +46,12 @@ const Join = () => {
                             <input
                                 type="password"
                                 className="input-text"
-                                placeholder="비밀번호를 입력하세요"
+                                placeholder="비밀번호를 입력해 주세요"
                             />
                         </div>
+                    </div>
+                    <div className="validation-warning">
+                        8~16자 사이 영문과 숫자, 특수문자를 사용하세요.
                     </div>
                     <div className="input-box">
                         <div className="input-wrap">
@@ -61,19 +59,39 @@ const Join = () => {
                             <input
                                 type="password"
                                 className="input-text"
-                                placeholder="비밀번호를 다시 입력하세요"
+                                placeholder="비밀번호를 다시 입력해 주세요"
                             />
                         </div>
+                    </div>
+                    <div className="validation-warning">
+                        비밀번호가 일치하지 않습니다.
                     </div>
                     <div className="input-box">
                         <div className="input-wrap">
                             <div className="input-title">전화번호</div>
                             <input
-                                type="number"
-                                className="input-text number"
-                                placeholder="전화번호를 입력하세요"
+                                type="text"
+                                className="input-text"
+                                placeholder="전화번호를 입력해 주세요"
                             />
                         </div>
+                        <div className="confirm-button">인증번호받기</div>
+                    </div>
+                    <div className="validation-warning">
+                        형식에 맞지 않는 번호입니다.
+                    </div>
+                    <div className="input-box">
+                        <div className="input-wrap">
+                            <div className="input-title">전화번호 인증</div>
+                            <input
+                                type="text"
+                                className="input-text"
+                                placeholder="인증번호를 입력해 주세요"
+                            />
+                        </div>
+                    </div>
+                    <div className="validation-warning">
+                        인증번호가 일치하지 않습니다.
                     </div>
                     <div className="input-box">
                         <div className="input-wrap">
@@ -81,10 +99,12 @@ const Join = () => {
                             <input
                                 type="text"
                                 className="input-text"
-                                placeholder="닉네임을 입력하세요 (2~8자 제한)"
+                                placeholder="닉네임을 입력해 주세요 (2~8자 제한)"
                             />
                         </div>
-                        <div className="confirm-button">중복확인</div>
+                    </div>
+                    <div className="validation-warning">
+                        이미 사용 중인 아이디입니다.
                     </div>
                     <div className="submit">회원가입</div>
                 </div>

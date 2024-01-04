@@ -34,5 +34,8 @@
     "scripts": {
         "build": "cross-env NODE_ENV=production webpack --progress",
         "start": "webpack serve --progress"
+    },
+    "dependencies": {
+        "react-dotenv": "^0.1.3"
     }
 }

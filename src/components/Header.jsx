@@ -9,7 +9,6 @@ import logo from "../images/logo.svg";
 const Header = () => {
     const navigate = useNavigate();
     const current = window.location.pathname;
-
     return (
         <div
             style={
@@ -34,14 +33,14 @@ const Header = () => {
                             <ul>
                                 <li
                                     onClick={() => {
-                                        navigate("/progress");
+                                        navigate("/#");
                                     }}
                                 >
                                     PROGRESS
                                 </li>
                                 <li
                                     onClick={() => {
-                                        navigate("/complete");
+                                        navigate("/#");
                                     }}
                                 >
                                     COMPLETE
@@ -55,7 +54,7 @@ const Header = () => {
                             <li
                                 className="login"
                                 onClick={() => {
-                                    navigate("/login");
+                                    navigate("/#");
                                 }}
                             >
                                 로그인

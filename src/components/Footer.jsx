@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../scss/components/footer.scss";
+
 //images
 import logo from "../images/footer/footer-logo.png";
 
-const Header = () => {
+const Footer = () => {
+    const navigate = useNavigate();
     const current = window.location.pathname;
     return (
         <div
@@ -47,4 +50,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Footer;

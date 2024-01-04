@@ -11,8 +11,8 @@ module.exports = {
     // 빌드 시 생기는 dist 파일
     output: {
         path: path.resolve("./dist"),
-        filename: "[name].min.js",
-        publicPath: "/"
+        filename: "[name].min.js"
+        // publicPath: "/"
     },
     // 파일 변경이 감지되었을 때 페이지를 다시 로드하고 새로고침
     devServer: {
